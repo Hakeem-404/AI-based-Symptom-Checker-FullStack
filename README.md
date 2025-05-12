@@ -59,8 +59,8 @@ The system employs three specialized Random Forest models, each optimized for sp
 
 1. Clone the repository
    ```
-   git clone https://github.com/yourusername/aihs.git
-   cd aihs
+   git clone https://github.com/Hakeem-404/AI-based-Symptom-Checker-FullStack.git
+   cd AI-based-Symptom-Checker-FullStack
    ```
 
 2. Install backend dependencies
