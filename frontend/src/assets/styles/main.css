@@ -1,0 +1,714 @@
+/* Base Variables */
+:root {
+  --primary: #2B82E3;
+  --secondary: #F0F2F5;
+  --danger: #ff000088;
+  --text: #1f2937;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+/* Layout Components */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: white;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-links a {
+  color: black;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  font-weight: 500;
+}
+
+.nav-links a:hover, .learn-more-btn:hover {
+  background: var(--secondary);
+  color: #000 !important;
+}
+
+/* Button Styles */
+button {
+  width: 100%;
+  padding: 0.75rem;
+  background: #3c3c3c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+.login-btn, .learn-more-btn {
+  background: #2B82E3;
+  color: white !important;
+  border-radius: 12px !important;
+}
+
+.logout-btn {
+  background: var(--danger);
+  color: white !important;
+  border-radius: 12px !important;
+}
+
+.signup-btn {
+  background: var(--secondary);
+  border-radius: 12px !important;
+}
+
+.signup-btn:hover {
+  background: var(--primary) !important;
+  color: white;
+}
+
+.login-btn:hover, .logout-btn:hover {
+  background: var(--primary) !important;
+  color: black !important;
+}
+
+/* Auth Pages */
+.auth-page {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow-md);
+  background: #E5E5E5;
+}
+
+.auth-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.auth-container {
+  padding: 2rem;
+  width: 60%;
+}
+
+.auth-alternative {
+  width: 35%;
+  padding-left: 2rem;
+  border-left: 1px solid grey;
+  text-align: center;
+}
+
+/* Form Styles */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group.inline {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.form-group.inline label {
+  margin-right: 2rem;
+  margin-bottom: 0;
+  width: 10rem;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--gray-300);
+  border-radius: 12px;
+  font-size: 1rem;
+  background: var(--secondary);
+}
+
+.auth-page input {
+  border-radius: 12px;
+  width: 40rem;
+  background: #F0F2F5;
+  padding: 0.75rem;
+  border: none;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+select {
+  background-color: white;
+}
+
+/* Auth Buttons */
+.submit-btn {
+  background: #2B82E3;
+  color: white;
+  padding: 0.5rem 1rem;
+  width: 40rem;
+  display: inline-block;
+  text-align: center;
+  font-weight: 500;
+  border-radius: 12px;
+  margin-top: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: #F0F2F5;
+  color: black !important;
+  border-radius: 12px;
+}
+
+.signup-btn1, .login-btn1 {
+  color: black;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  width: 20rem;
+  display: inline-block;
+  text-align: center;
+  font-weight: 500;
+  background: #F0F2F5;
+  border-radius: 12px;
+  margin-top: 6rem;
+}
+
+.signup-btn1:hover, .login-btn1:hover {
+  background: #2B82E3;
+  color: white !important;
+}
+
+/* Home Page */
+.home {
+  padding: 2rem;
+  padding-left: 10rem;
+}
+
+.insights-section {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  background: white;
+}
+
+.insights-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-image-container {
+  flex: 1;
+}
+
+.user-image {
+  width: 80%;
+  height: auto;
+  object-fit: cover;
+}
+
+.health-insights {
+  width: 40%;
+  padding-left: 2rem;
+  border-left: 1px solid grey;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.metric-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--gray-200);
+}
+
+/* Landing Page */
+.landing .hero {
+  position: relative;
+  max-width: 1200px;
+  margin: 1rem auto;
+  height: 70vh;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+  max-width: 800px;
+}
+
+.features {
+  padding: 2rem;
+}
+
+.features h2 {
+  text-align: left;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  padding-left: 6rem;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+.feature-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--gray-200);
+}
+
+.icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+/* Profile Page */
+.profile-page {
+  padding: 2rem;
+}
+
+.profile-container, .medical-container, h {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.profile-nav {
+  width: 22%;
+  background: white;
+  padding: 1rem 0;
+  border-radius: 12px;
+}
+
+.profile-nav a {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.profile-nav a.active {
+  background: var(--secondary);
+}
+
+.profile-form {
+  width: 75%;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+}
+
+/* Registration Steps */
+.health-metrics-page,
+.medical-info-page,
+.personal-info-page,
+.profile-page {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.metrics-form,
+.medical-form,
+.personal-form, .account-form {
+  width: 600px;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.stepper {
+  margin-top: 2rem;
+}
+
+.stepper-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #D9D9D9;
+}
+
+.dot.active {
+  background: black;
+}
+
+.nav-buttons, .form-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.nav-buttons button, .form-actions button {
+  width: 48%;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+
+/* Symptoms checker */
+.symptoms-checker {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: var(--shadow-md);
+}
+
+.symptoms-header {
+  margin-bottom: 2rem;
+}
+
+.search-container {
+  margin: 2rem 0;
+  position: relative;
+}
+
+.search-input {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid var(--gray-300);
+  border-radius: 12px;
+  font-size: 1rem;
+  background: var(--secondary);
+}
+
+.symptom-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid var(--gray-300);
+  border-radius: 12px;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+  box-shadow: var(--shadow-md);
+  margin-top: 0.5rem;
+}
+
+.symptom-item {
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  background: var(--secondary);
+  border-radius: 8px;
+  margin: 0.25rem;
+  transition: all 0.2s ease;
+}
+
+.symptom-item:hover {
+  background: #2c2c2c;
+  color: white;
+}
+
+.symptom-item.selected {
+  background: #308ffc;
+  color: white;
+}
+
+.selected-symptoms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  background: var(--secondary);
+  border-radius: 12px;
+  min-height: 4rem;
+}
+
+.selected-symptom-tag {
+  background: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.selected-symptom-tag:hover {
+  background: #2c2c2c;
+  color: white;
+}
+
+.remove-tag {
+  font-weight: bold;
+}
+
+.get-result-btn {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 2rem;
+  background: #2c2c2c;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.get-result-btn:hover {
+  background: var(--secondary);
+  color: black;
+}
+
+.get-result-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+
+/* Navigation Steps */
+.nav-buttons button {
+  width: 48%;
+  padding: 1rem;
+  border-radius: 12px;
+  background: #2c2c2c;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-buttons button:hover {
+  background-color: #F0F2F5;
+  color: black;
+}
+
+/* Footer */
+footer {
+  padding: 2rem;
+  background: white;
+  margin-top: 2rem;
+  border-top: 1px solid var(--gray-200);
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-links a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-links a {
+  color: grey;
+  font-size: 1.25rem;
+}
+
+/* Auth Links */
+.forgot-password {
+  margin-bottom: 1rem;
+}
+
+.forgot-password a {
+  color: black;
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+/* Auth Headers */
+.auth-alternative p {
+  font-weight: 500;
+  font-size: x-large;
+  margin-top: 6rem;
+  text-align: center;
+}
+
+/*Error msg*/
+.error-message {
+  color: #dc2626;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.error-alert {
+  background-color: #fee2e2;
+  color: #dc2626;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+
+/* Utility Classes */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-gray { color: grey; }
+.font-medium { font-weight: 500; }
+
+.mt-4 { margin-top: 1rem; }
+.mb-4 { margin-bottom: 1rem; }
+.py-4 { padding-top: 1rem; padding-bottom: 1rem; }
+.pl-2 { padding-left: 0.5rem; }
+.pb-4 { padding-bottom: 1rem; }
+.pt-4 { padding-top: 1rem; }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nav-links1 {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .home {
+    padding: 1rem;
+  }
+
+  .auth-content {
+    flex-direction: column;
+  }
+
+  .auth-container,
+  .auth-alternative {
+    width: 100%;
+    padding: 1rem;
+    border-left: none;
+  }
+
+  .auth-page input,
+  .submit-btn {
+    width: 100%;
+  }
+
+  .signup-btn1,
+  .login-btn1 {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .auth-alternative p {
+    margin-top: 2rem;
+  }
+
+  .profile-container {
+    flex-direction: column;
+  }
+
+  .profile-nav,
+  .profile-form {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+    padding: 0 1rem;
+  }
+
+  .features h2 {
+    padding-left: 1rem;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+

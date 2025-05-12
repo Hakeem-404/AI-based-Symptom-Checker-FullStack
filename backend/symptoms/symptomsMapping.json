@@ -1,0 +1,18 @@
+{
+  "1": { "name": "Confusion/Hallucination", "diabetes": 0.0042, "heart": 0.0881, "stroke": 0.2846 },
+  "2": { "name": "Blurred vision", "diabetes": 0.0601, "heart": 0.0065, "stroke": 0.0242 },
+  "3": { "name": "Shortness of breath", "diabetes": 0.0, "heart": 0.3125, "stroke": 0.0889 },
+  "4": { "name": "Chest pain", "diabetes": 0.0, "heart": 0.185, "stroke": 0.0727 },
+  "5": { "name": "Excessive hunger", "diabetes": 0.0275, "heart": 0.0089, "stroke": 0.0 },
+  "6": { "name": "Fatigue", "diabetes": 0.0555, "heart": 0.0235, "stroke": 0.0087 },
+  "7": { "name": "Headache", "diabetes": 0.0, "heart": 0.0561, "stroke": 0.1778 },
+  "8": { "name": "Increased appetite", "diabetes": 0.18, "heart": 0.0719, "stroke": 0.0338 },
+  "9": { "name": "Lethargy", "diabetes": 0.1544, "heart": 0.0193, "stroke": 0.0286 },
+  "10": { "name": "Obesity", "diabetes": 0.0964, "heart": 0.0088, "stroke": 0.0191 },
+  "11": { "name": "Frequent urination", "diabetes": 0.199, "heart": 0.0169, "stroke": 0.0462 },
+  "12": { "name": "Insomnia/Restlessness", "diabetes": 0.13, "heart": 0.0219, "stroke": 0.0246 },
+  "13": { "name": "Sweating", "diabetes": 0.0, "heart": 0.1391, "stroke": 0.0197 },
+  "14": { "name": "Vomiting", "diabetes": 0.0429, "heart": 0.0243, "stroke": 0.0421 },
+  "15": { "name": "Weakness on one side of body", "diabetes": 0.0, "heart": 0.0134, "stroke": 0.1169 },
+  "16": { "name": "Weight loss", "diabetes": 0.05, "heart": 0.0038, "stroke": 0.0122 }
+}
