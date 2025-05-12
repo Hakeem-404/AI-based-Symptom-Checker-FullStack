@@ -2,8 +2,6 @@
 
 A sophisticated AI-driven symptom assessment and health recommendation system that employs Random Forest algorithms to provide personalized health insights and triage guidance.
 
-![A.I.H.S Screenshot](screenshots/dashboard.png)
-
 ## 🌟 Project Overview
 
 A.I.H.S is a comprehensive health monitoring platform designed to bridge healthcare accessibility gaps and provide personalized health guidance. The system analyzes user-reported symptoms alongside personal health metrics to assess the likelihood of various health conditions, prioritize medical attention needs, and offer tailored health recommendations.
